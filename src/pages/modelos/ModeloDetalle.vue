@@ -6,7 +6,7 @@ import { ArrowLeft, Cart, Battery, Shield, Ram } from '@/components/ui/icons'
 
 const route = useRoute()
 const router = useRouter()
-
+ 
 const modeloId = route.params.id
 const modeloData = computed(() => modelos.find(m => m.id === modeloId))
 
@@ -15,7 +15,7 @@ const modelosNuevos = ['iphone-15-pro', 'huawei-p50-pro', 'samsung-s25-ultra']
 
 <template>
     <main class="bg-gradient-to-b from-cyan-900 to-cyan-950 text-white min-h-screen">
-      <div v-if="modeloData" class="container mx-auto px-4 py-32">
+      <div v-if="modeloData" class="container mx-auto px-4 py-8 sm:py-25">
         <router-link to="/#modelos" class="inline-flex items-center gap-2 mb-8 text-cyan-300 hover:text-white transition-colors">
           <ArrowLeft class="w-6 h-6" />
           Volver al listado
@@ -38,14 +38,14 @@ const modelosNuevos = ['iphone-15-pro', 'huawei-p50-pro', 'samsung-s25-ultra']
               >
                 Nuevo Modelo
               </span>
-              <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent">
+              <h1 class="text-3xl sm:text-5xl font-bold mb-1 sm:mb-4 bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent">
                 {{ modeloData.nombre }}
               </h1>
-              <p class="text-xl text-cyan-100">{{ modeloData.descripcion }}</p>
+              <p class="text-md sm:text-xl text-cyan-100">{{ modeloData.descripcion }}</p>
             </div>
 
-            <div class="space-y-6">
-              <h3 class="text-3xl font-semibold flex items-center gap-2">
+            <div class="space-y-5">
+              <h3 class="text-xl sm:text-3xl font-semibold flex items-center gap-2">
                 <Shield class="w-6 h-6" />
                 Especificaciones
               </h3>

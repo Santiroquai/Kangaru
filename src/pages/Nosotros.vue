@@ -65,11 +65,6 @@ const simpleLayout = true
           </div>
         </div>
       </div>
-
-      <!-- Logo K -->
-      <router-link to="/" class="absolute z-10 top-4 right-4 sm:top-8 sm:right-8">
-        <K class="size-8 sm:size-15 text-white hover:text-yellow-100 transition-colors duration-500" />
-      </router-link>
     </div>
   
 </template>

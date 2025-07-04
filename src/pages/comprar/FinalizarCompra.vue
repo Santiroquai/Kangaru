@@ -2,6 +2,7 @@
 import { useRoute, useRouter } from 'vue-router';
 import { modelos } from '@/data/modelos';
 import { ArrowLeft } from '@/components/ui/icons'
+import BuyIcon from '../../components/ui/icons/BuyIcon.vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -22,7 +23,7 @@ function enviarFormulario(e) {
 
 <template>
     <main class="min-h-screen bg-gradient-to-b from-cyan-900 to-cyan-950 text-white">
-      <div class="container mx-auto px-4 py-16">
+      <div class="container mx-auto px-4 py-8 sm:py-25">
         <div class="flex justify-between items-center mb-12">
           <RouterLink
             :to="`/modelos/${modeloData.id}`"
@@ -31,7 +32,6 @@ function enviarFormulario(e) {
             <ArrowLeft class="w-6 h-6" />
             Volver al modelo
           </RouterLink>
-          <h2 class="text-lg font-bold text-cyan-100">Finalizar Compra</h2>
         </div>
 
         <div class="grid lg:grid-cols-2 mx-6 lg:mx-24 gap-12 items-start">
@@ -92,13 +92,9 @@ function enviarFormulario(e) {
 
               <button
                 type="submit"
-                class="w-full py-4 bg-cyan-700 hover:bg-cyan-800 text-white font-bold rounded-xl flex items-center justify-center gap-2"
+                class="w-full py-3 mt-7 sm:py-4 sm:mt-9 bg-cyan-700 hover:bg-cyan-800 text-white font-bold rounded-xl flex items-center justify-center gap-2"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/>
-                  <polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/>
-                </svg>
+                <BuyIcon />
                 Confirmar Compra
               </button>
             </form>

@@ -118,9 +118,10 @@ onMounted(() => {
       </div>
 
       <!-- Modelos List -->
-      <div style="padding-top: 330vh;" id="modelos">
+      <div class="pt-[345vh] sm:pt-[320vh]" id="modelos">
         <ModelosList />
       </div>
+
 
       <!-- Footer con info círculos -->
       <div class="absolute bottom-0 w-full">
@@ -156,8 +157,8 @@ onMounted(() => {
         </section>
 
         <!-- Footer texto -->
-        <section id="footer" class="text-white opacity-0">
-          <div class="bg-cyan-800 py-6">
+        <section id="footer">
+          <div class="bg-cyan-800 py-3 sm:py-5 md:py-6">
             <h2 class="text-4xl md:text-7xl font-bold text-center text-yellow-100">KANGARU</h2>
             <h2 class="text-xl md:text-2xl font-bold text-center text-yellow-100">STORE</h2>
           </div>
@@ -182,7 +183,7 @@ onMounted(() => {
     mask-image: url("/logo-stack.svg");
     mask-position: 31% 22%;
     mask-repeat: no-repeat;
-    mask-size: clamp(1900vh, 1000%, 0vh);
+    mask-size: clamp(2000vh, 1000%, 0vh);
   }
 }
 
