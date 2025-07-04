@@ -222,8 +222,6 @@ onMounted(() => {
 
 @media (max-width: 420px) {
   #logo-mask {
-    mask-image: none !important;
-    clip-path: circle(80% at center);
     transition: clip-path 0.5s ease;
   }
 }
