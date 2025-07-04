@@ -27,6 +27,6 @@ import ImageLoader from '@/components/ui/ImageLoader.vue'
       </router-link>
     </div>
 
-    <h2 class="text-xl sm:text-3xl font-bold text-center text-cyan-900 m-4 mb-5 sm:m-10 sm:mb-12">- Solicita un turno y pasa por el showroom! -</h2>
+    <h2 class="text-xl sm:text-3xl font-bold text-center text-cyan-900 m-4 mb-5 sm:m-10 lg:mb-6">- Solicita un turno y pasa por el showroom! -</h2>
   </section>
 </template>
