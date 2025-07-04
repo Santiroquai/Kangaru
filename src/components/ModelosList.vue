@@ -19,7 +19,7 @@ import ImageLoader from '@/components/ui/ImageLoader.vue'
             :src="modelo.imagen"
             :preview="modelo.preview"
             :alt="modelo.nombre"
-            customClass="w-full max-w-[110px] sm:max-w-[180px] lg:max-w-[180px] object-contain sm:mb-8"
+            customClass="w-full max-w-[110px] sm:max-w-[180px] lg:max-w-[200px] object-contain sm:mb-8"
           />
           <h3 class="text-sm font-bold leading-tight">{{ modelo.nombre }}</h3>
           <p class="text-xs leading-tight">{{ modelo.descripcion }}</p>
