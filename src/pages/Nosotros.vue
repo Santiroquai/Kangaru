@@ -1,5 +1,4 @@
 <script setup>
-import K from "@/assets/K.svg"
 import HeroKeyBackground from "@/assets/hero-key-background.webp"
 
 // Prop para decirle al layout que use el modo simple
@@ -18,16 +17,16 @@ const simpleLayout = true
 
       <!-- Contenido principal -->
       <div class="relative z-10 h-full flex flex-col items-center justify-center px-4 sm:px-8">
-        <div class="max-w-6xl w-full space-y-8 bg-gradient-to-b from-cyan-900 to-cyan-950 p-6 sm:p-12 rounded-2xl">
-          <h1 class="text-2xl sm:text-5xl md:text-6xl font-bold mb-10 md:mb-16 text-white text-center">
+        <div class="max-w-6xl w-full space-y-6 bg-gradient-to-b from-cyan-900 to-cyan-950 p-4 sm:p-12 rounded-2xl">
+          <h1 class="text-2xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-16 text-white text-center">
             KANGARU STORE
           </h1>
 
-          <div class="relative max-w-6xl w-full space-y-8 bg-cyan-800/40 p-6 sm:p-10 rounded-2xl">
+          <div class="relative max-w-6xl w-full space-y-8 bg-cyan-800/30 p-4 sm:p-10 rounded-2xl">
             <!-- Contenedor de dos columnas -->
-            <div class="relative grid grid-cols-1 md:grid-cols-2 text-white text-md md:text-lg md:leading-10">
+            <div class="relative grid grid-cols-1 md:grid-cols-2 text-center text-white text-md md:text-lg md:leading-10">
               <!-- Columna izquierda -->
-              <div class="space-y-6 md:px-11">
+              <div class="space-y-4 md:px-11">
                 <p>
                   Somos importadores directos de teléfonos celulares de alta gama, ofreciendo los últimos modelos
                   con garantía internacional y soporte técnico especializado.
@@ -39,7 +38,7 @@ const simpleLayout = true
               </div>
 
               <!-- Columna derecha -->
-              <div class="space-y-6 md:ps-11">
+              <div class="space-y-4 md:ps-11">
                 <p>
                   Nuestro catálogo incluye las marcas más prestigiosas del mercado, con dispositivos
                   completamente nuevos, sellados de fábrica.
