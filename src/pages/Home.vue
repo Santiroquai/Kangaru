@@ -27,7 +27,11 @@ onMounted(() => {
   tl.to("#hero-key", { duration: isMobile ? 0.8 : 1.1, scale: 1 })
     .to("#hero-key-logo", { opacity: 0 }, "<")
     .to("#hero-footer", { opacity: 0 }, "<")
-    .to("#logo-mask", { maskSize: isMobile ? "96vh" : "clamp(65vh, 25%, 30vh)" }, 0.07)
+    .to("#logo-mask", { 
+      maskSize: isMobile ? "60vh" : "clamp(65vh, 25%, 30vh)",
+      ease: "power2.out"
+    }, 0.07)
+.to("#logo-mask", { maskSize: isMobile ? "96vh" : "clamp(65vh, 25%, 30vh)" }, 0.07)
     .to("#hero-key", { opacity: 0, duration: isMobile ? 0.1 : 0.2 }, 0.5)
 
   gsap.to("#modelos, #footer, #info-circles", {
@@ -187,6 +191,17 @@ onMounted(() => {
     mask-size: clamp(2000vh, 1000%, 0vh);
   }
 }
+
+@media (max-width: 420px) {
+  #logo-mask {
+    mask-image: url("/logo-stack.svg") !important;
+    mask-size: 80vh;
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    transition: mask-size 0.4s ease;
+  }
+}
+
 
 #info-circles .relative {
   transform-origin: center;
