@@ -14,7 +14,7 @@ import ImageLoader from '@/components/ui/ImageLoader.vue'
         :to="`/modelos/${encodeURIComponent(modelo.id)}`"
         class="block hover:scale-102 transition-transform duration-200"
       >
-        <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md text-center flex flex-col items-center h-full min-h-[180px] sm:min-h-[260px]">
+        <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md text-center flex flex-col items-center h-full min-h-[180px] sm:min-h-[260px] lg:min-h-[280px]">
           <ImageLoader
             :src="modelo.imagen"
             :preview="modelo.preview"
