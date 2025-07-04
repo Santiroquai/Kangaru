@@ -15,17 +15,19 @@ import ContactIcon from '../components/ui/icons/ContactIcon.vue'
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
+  const isMobile = window.innerWidth <= 420
+
   const tl = gsap.timeline({
     ease: "power2.out",
     scrollTrigger: {
-      scrub: 1,
+      scrub: isMobile ? 0.2 : 1
     },
   })
 
-  tl.to("#hero-key", { duration: 1, scale: 1 })
+  tl.to("#hero-key", { duration: isMobile ? 0.6 : 1, scale: 1 })
     .to("#hero-key-logo", { opacity: 0 }, "<")
     .to("#hero-footer", { opacity: 0 }, "<")
-    .to("#logo-mask", { maskSize: "clamp(65vh, 25%, 30vh)" }, 0.07)
+    .to("#logo-mask", { maskSize: isMobile ? "116vh" : "clamp(65vh, 25%, 30vh)" }, 0.07)
     .to("#hero-key", { opacity: 0, duration: 0.2 }, 0.5)
 
   gsap.to("#modelos, #footer, #info-circles", {
@@ -103,7 +105,7 @@ onMounted(() => {
       </div>
 
       <!-- Header and Footer on Hero -->
-      <div class="fixed flex flex-col items-center h-screen px-5 py-5 sm:px-20 sm:py-20 md:px-17 md:py-15 w-full">
+      <div class="fixed flex flex-col items-center h-screen px-5 sm:px-20 sm:py-20 md:px-17 md:py-15 w-full">
         <header class="flex w-full justify-end">
           <router-link to="/nosotros">
             <K class="ml-auto max-w-8 sm:max-w-15 md:max-w-18 transition-colors duration-500 cursor-pointer mb-0 sm:-mb-6" />
@@ -175,14 +177,13 @@ onMounted(() => {
   mask-position: 51% 15%;
   mask-repeat: no-repeat;
   mask-size: clamp(3300vh, 1600%, 0vh);
+  will-change: mask-size;
+  transform: translateZ(0);
 }
 
 @media (max-width: 390px) {
   #logo-mask {
-    background: white;
-    mask-image: url("/logo-stack.svg");
     mask-position: 31% 22%;
-    mask-repeat: no-repeat;
     mask-size: clamp(2000vh, 1000%, 0vh);
   }
 }
