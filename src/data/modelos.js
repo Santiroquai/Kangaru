@@ -4,6 +4,7 @@ export const modelos = [
     nombre: 'Iphone 15 pro',
     descripcion: 'Pantalla OLED, 256GB',
     imagen: '/phones/iphone15pro.jpg',
+    preview: '/phones/preview/iphone15pro-sm.webp',
     precio: 900,
     especificaciones: {
       pantalla: '6.1" OLED',
@@ -17,6 +18,7 @@ export const modelos = [
     nombre: 'Huawei p50 pro',
     descripcion: 'Pantalla OLED, 256GB',
     imagen: '/phones/huaweip50pro.jpg',
+    preview: '/phones/preview/huaweip50pro-sm.webp',
     precio: 870,
     especificaciones: {
       pantalla: '6.5" OLED',
@@ -30,6 +32,7 @@ export const modelos = [
     nombre: 'Iphone 15',
     descripcion: 'Pantalla OLED, 128GB',
     imagen: '/phones/iphone15.jpg',
+    preview: '/phones/preview/iphone15-sm.webp',
     precio: 720,
     especificaciones: {
       pantalla: '6.1" OLED',
@@ -43,6 +46,7 @@ export const modelos = [
     nombre: 'Huawei p40 pro',
     descripcion: 'Pantalla OLED, 256GB',
     imagen: '/phones/huaweip40pro.jpg',
+    preview: '/phones/preview/huaweip40pro-sm.webp',
     precio: 680,
     especificaciones: {
       pantalla: '6.58" OLED',
@@ -56,6 +60,7 @@ export const modelos = [
     nombre: 'Samsung s25 Ultra',
     descripcion: 'Pantalla AMOLED, 512GB',
     imagen: '/phones/samsungs25ultra.jpg',
+    preview: '/phones/preview/samsungs25ultra-sm.webp',
     precio: 1100,
     especificaciones: {
       pantalla: '6.9" AMOLED',
@@ -69,6 +74,7 @@ export const modelos = [
     nombre: 'Samsung s25',
     descripcion: 'Pantalla LCD, 128GB',
     imagen: '/phones/samsungs25.jpg',
+    preview: '/phones/preview/samsungs25-sm.webp',
     precio: 760,
     especificaciones: {
       pantalla: '6.2" LCD',
@@ -82,6 +88,7 @@ export const modelos = [
     nombre: 'Pixel pro 9',
     descripcion: 'Pantalla OLED, 512GB',
     imagen: '/phones/googlepixelpro9.jpg',
+    preview: '/phones/preview/googlepixelpro9-sm.webp',
     precio: 1100,
     especificaciones: {
       pantalla: '6.73" OLED',
@@ -95,6 +102,7 @@ export const modelos = [
     nombre: 'Nothing phone 2 pro',
     descripcion: 'Pantalla AMOLED, 128GB',
     imagen: '/phones/nothingphone2pro.jpg',
+    preview: '/phones/preview/nothingphone2pro-sm.webp',
     precio: 970,
     especificaciones: {
       pantalla: '6.77" LCD',

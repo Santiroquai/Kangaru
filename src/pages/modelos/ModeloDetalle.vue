@@ -10,7 +10,7 @@ const router = useRouter()
 const modeloId = route.params.id
 const modeloData = computed(() => modelos.find(m => m.id === modeloId))
 
-const modelosNuevos = ['iphone-15-pro', 'Hhawei-p50-pro', 'samsung-s25-ultra']
+const modelosNuevos = ['iphone-15-pro', 'huawei-p50-pro', 'samsung-s25-ultra']
 </script>
 
 <template>

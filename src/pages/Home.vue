@@ -6,8 +6,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import HeroKeyLogo from "@/assets/hero-key-logo.webp"
 import HeroKeyBackground from "@/assets/hero-key-background.webp"
 import K from "@/assets/K.svg"
-import MapaRecoleta from '@/assets/mapa-recoleta.jpg'
-import MapaCityBell from '@/assets/mapa-citybell.jpg'
+import MapaRecoleta from '@/assets/mapa-recoleta.webp'
+import MapaCityBell from '@/assets/mapa-citybell.webp'
 import ModelosList from "@/components/ModelosList.vue"
 import LocationIcon from '../components/ui/icons/LocationIcon.vue' 
 import ContactIcon from '../components/ui/icons/ContactIcon.vue'

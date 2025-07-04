@@ -1,5 +1,6 @@
 <script setup>
 import { modelos } from '@/data/modelos.js';
+import ImageLoader from '@/components/ui/ImageLoader.vue'
 </script>
 
 <template>
@@ -14,10 +15,11 @@ import { modelos } from '@/data/modelos.js';
         class="block hover:scale-102 transition-transform duration-200"
       >
         <div class="bg-white p-6 rounded-xl shadow-md text-center flex flex-col items-center h-full min-h-[260px]">
-          <img 
-            :src="modelo.imagen" 
+          <ImageLoader
+            :src="modelo.imagen"
+            :preview="modelo.preview"
             :alt="modelo.nombre"
-            class="w-full max-w-[160px] aspect-[3/4] object-contain mb-4" 
+            customClass="w-full max-w-[160px] aspect-[3/4] object-contain mb-4"
           />
           <h3 class="text-sm font-bold leading-tight">{{ modelo.nombre }}</h3>
           <p class="text-xs leading-tight">{{ modelo.descripcion }}</p>
