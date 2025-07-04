@@ -111,7 +111,7 @@ onMounted(() => {
         </header>
 
         <footer id="hero-footer" class="absolute bottom-16 m-auto">
-          <span class="text-cyan-900 text-3xl font-bold drop-shadow-l word-spacing-[20px]">
+          <span class="text-cyan-900 text-xl sm:text-2xl md:text-3xl font-bold drop-shadow-l word-spacing-[20px]">
             Stock disponible
           </span>
         </footer>
@@ -124,8 +124,8 @@ onMounted(() => {
 
       <!-- Footer con info círculos -->
       <div class="absolute bottom-0 w-full">
-        <section id="info-circles" class="opacity-0 px-3 md:px-60 lg:px-87 pb-8 lg:pb-43">
-          <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 max-w-50 lg:max-w-3xl">
+        <section id="info-circles" class="opacity-0 px-3 sm:px-10 md:px-60 lg:px-87 pb-8 lg:pb-43">
+          <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 max-w-42 lg:max-w-3xl">
             <!-- Recoleta -->
             <div class="relative bg-cyan-900/70 backdrop-blur-sm rounded-full p-6 aspect-square flex flex-col items-center justify-center border-2 border-cyan-500/30 hover:border-yellow-200 transition-all duration-300 overflow-hidden">
               <img :src="MapaRecoleta" alt="Mapa Recoleta" class="absolute w-full h-full object-cover opacity-30" />
@@ -158,7 +158,7 @@ onMounted(() => {
         <!-- Footer texto -->
         <section id="footer" class="text-white opacity-0">
           <div class="bg-cyan-800 py-6">
-            <h2 class="text-5xl md:text-7xl font-bold text-center text-yellow-100">KANGARU</h2>
+            <h2 class="text-4xl md:text-7xl font-bold text-center text-yellow-100">KANGARU</h2>
             <h2 class="text-xl md:text-2xl font-bold text-center text-yellow-100">STORE</h2>
           </div>
         </section>
@@ -180,7 +180,7 @@ onMounted(() => {
   #logo-mask {
     background: white;
     mask-image: url("/logo-stack.svg");
-    mask-position: 31% 25%;
+    mask-position: 31% 22%;
     mask-repeat: no-repeat;
     mask-size: clamp(1900vh, 1000%, 0vh);
   }
