@@ -30,6 +30,24 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from) {
+    // Si volvés desde una vista detallada al Home con hash "#modelos"
+    if (to.name === 'Home' && to.hash === '#modelos') {
+      return {
+        el: '#modelos',
+        behavior: 'smooth' // hace scroll suave
+      }
+    }
+
+    // Si vas a ModeloDetalle o FinalizarCompra → forzar scroll al top
+    if (to.name === 'ModeloDetalle' || to.name === 'FinalizarCompra') {
+      return { top: 0 }
+    }
+
+    // Para cualquier otra ruta, dejar que Vue Router decida
+    return false
+  }
 })
+
 
 export default router

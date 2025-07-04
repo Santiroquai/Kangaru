@@ -6,7 +6,7 @@ import { ArrowLeft, Cart, Battery, Shield, Ram } from '@/components/ui/icons'
 
 const route = useRoute()
 const router = useRouter()
- 
+
 const modeloId = route.params.id
 const modeloData = computed(() => modelos.find(m => m.id === modeloId))
 
