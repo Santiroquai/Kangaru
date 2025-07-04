@@ -150,11 +150,14 @@ onMounted(() => {
             </div>
 
             <!-- Contacto -->
-            <div class="relative bg-cyan-700/50 backdrop-blur-sm rounded-full p-6 aspect-square flex flex-col items-center justify-center border-2 border-cyan-500/30 hover:border-yellow-200 transition-all duration-300 overflow-hidden">
-              <ContactIcon />
-              <h3 class="text-md font-bold text-center text-white mb-1">CONTACTO</h3>
-              <p class="text-sm text-center text-cyan-200">@kangaru</p>
-            </div>
+            <router-link to="/contacto" class="block">
+              <div class="relative bg-cyan-700/50 backdrop-blur-sm rounded-full p-6 aspect-square flex flex-col items-center justify-center border-2 border-cyan-500/30 hover:border-yellow-200 transition-all duration-300 overflow-hidden cursor-pointer">
+                <ContactIcon />
+                <h3 class="text-md font-bold text-center text-white mb-1">CONTACTO</h3>
+                <p class="text-sm text-center text-cyan-200">@kangaru</p>
+              </div>
+            </router-link>
+
           </div>
         </section>
 

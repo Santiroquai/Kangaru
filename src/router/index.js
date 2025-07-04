@@ -16,7 +16,7 @@ const routes = [
     children: [
       { path: '', name: 'Home', component: Home },
       { path: 'nosotros', name: 'Nosotros', component: Nosotros, meta:{ simpleLayout: true } },
-      { path: 'contacto', name: 'Contacto', component: Contacto },
+      { path: 'contacto', name: 'Contacto', component: Contacto, meta: { simpleLayout: true } },
       { path: 'comprar/:modelo', name: 'FinalizarCompra', component: FinalizarCompra, meta: { simpleLayout: true } },
       { path: 'modelos', name: 'ListadoModelos', component: ListadoModelos },
       { path: 'modelos/:id', name: 'ModeloDetalle', component: ModeloDetalle, meta: { simpleLayout: true } },
