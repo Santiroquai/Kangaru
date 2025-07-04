@@ -24,7 +24,7 @@ onMounted(() => {
     },
   })
 
-  tl.to("#hero-key", { duration: isMobile ? 0.6 : 1, scale: 1 })
+  tl.to("#hero-key", { duration: isMobile ? 0.2 : 1, scale: 1 })
     .to("#hero-key-logo", { opacity: 0 }, "<")
     .to("#hero-footer", { opacity: 0 }, "<")
     .to("#logo-mask", { maskSize: isMobile ? "116vh" : "clamp(65vh, 25%, 30vh)" }, 0.07)
