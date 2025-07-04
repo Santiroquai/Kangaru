@@ -17,49 +17,19 @@ gsap.registerPlugin(ScrollTrigger)
 onMounted(() => {
   const isMobile = window.innerWidth <= 420
 
-  if (isMobile) {
-    // Mobile-friendly version with clip-path
-    const logoMask = document.getElementById("logo-mask")
-    if (logoMask) {
-      logoMask.style.maskImage = "none"
-      logoMask.style.clipPath = "circle(80% at center)"
-    }
+  const tl = gsap.timeline({
+    ease: "power2.out",
+    scrollTrigger: {
+      scrub: isMobile ? 0.2 : 1
+    },
+  })
 
-    gsap.to("#hero-key", {
-      scale: 1,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power2.out",
-      scrollTrigger: {
-        scrub: 0.3
-      }
-    })
+  tl.to("#hero-key", { duration: isMobile ? 0.8 : 1.1, scale: 1 })
+    .to("#hero-key-logo", { opacity: 0 }, "<")
+    .to("#hero-footer", { opacity: 0 }, "<")
+    .to("#logo-mask", { maskSize: isMobile ? "96vh" : "clamp(65vh, 25%, 30vh)" }, 0.07)
+    .to("#hero-key", { opacity: 0, duration: isMobile ? 0.1 : 0.2 }, 0.5)
 
-    gsap.to("#logo-mask", {
-      clipPath: "circle(30% at center)",
-      duration: 0.8,
-      ease: "power2.out",
-      scrollTrigger: {
-        scrub: 0.3
-      }
-    })
-  } else {
-    // Original desktop animation with mask-size
-    const tl = gsap.timeline({
-      ease: "power2.out",
-      scrollTrigger: {
-        scrub: 1,
-      },
-    })
-
-    tl.to("#hero-key", { duration: 1.1, scale: 1 })
-      .to("#hero-key-logo", { opacity: 0 }, "<")
-      .to("#hero-footer", { opacity: 0 }, "<")
-      .to("#logo-mask", { maskSize: "clamp(65vh, 25%, 30vh)" }, 0.07)
-      .to("#hero-key", { opacity: 0, duration: 0.2 }, 0.5)
-  }
-
-  // Común para ambas versiones
   gsap.to("#modelos, #footer, #info-circles", {
     opacity: 1,
     duration: 1,
@@ -107,7 +77,6 @@ onMounted(() => {
   });
 })
 </script>
-
 
 <template>
 
@@ -201,7 +170,6 @@ onMounted(() => {
   
 </template>
 
-
 <style>
 #logo-mask {
   background: white;
@@ -217,12 +185,6 @@ onMounted(() => {
   #logo-mask {
     mask-position: 31% 22%;
     mask-size: clamp(2000vh, 1000%, 0vh);
-  }
-}
-
-@media (max-width: 420px) {
-  #logo-mask {
-    transition: clip-path 0.5s ease;
   }
 }
 
