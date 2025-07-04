@@ -37,8 +37,12 @@ const router = createRouter({
       }
     }
 
-    // Si vas a ModeloDetalle o FinalizarCompra → forzar scroll al top
-    if (to.name === 'ModeloDetalle' || to.name === 'FinalizarCompra') {
+    // Si vas a ModeloDetalle o FinalizarCompra 0 Contacto → forzar scroll al top
+    if (
+      to.name === 'ModeloDetalle' ||
+      to.name === 'FinalizarCompra' ||
+      to.name === 'Contacto'
+    ) {
       return { top: 0 }
     }
 

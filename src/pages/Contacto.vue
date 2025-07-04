@@ -5,7 +5,7 @@ import InstagramIcon from '@/components/ui/icons/InstagramIcon.vue'
 </script>
 
 <template>
-  <section class="bg-gradient-to-b from-cyan-900 to-cyan-950 text-white min-h-screen py-14 sm:py-34 px-6 sm:px-20 lg:px-60">
+  <section class="bg-gradient-to-b from-cyan-900 to-cyan-950 text-white min-h-screen py-11 sm:py-34 px-6 sm:px-20 lg:px-60">
     <h1 class="text-3xl sm:text-5xl font-bold text-center text-yellow-100 mb-10 sm:mb-20">- Contacto -</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> 
@@ -39,7 +39,7 @@ import InstagramIcon from '@/components/ui/icons/InstagramIcon.vue'
           <h3 class="text-xl font-semibold">Contacto directo</h3>
         </div>
         <p class="text-cyan-200">WhatsApp: <a href="https://wa.me/5491123456789" target="_blank" class="">+54 9 11 2345 6789</a></p>
-        <p class="text-cyan-200">Email: <a href="mailto:contacto@kangaru.store" class="text-yellow-100 underline">contacto@kangaru.store</a></p>
+        <p class="text-cyan-200">Email: <a href="mailto:contacto@kangaru.store" class="text-yellow-100">contacto@kangaru.store</a></p>
         <p class="text-cyan-200"><a href="https://instagram.com/kangaru" target="_blank" class="text-yellow-100 flex items-center gap-2 mt-2"><InstagramIcon class="w-4 h-4" />@kangaru</a></p>
       </div>
     </div>
