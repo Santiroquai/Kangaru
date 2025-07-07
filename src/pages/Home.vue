@@ -130,7 +130,7 @@ onMounted(() => {
         <section id="info-circles" class="opacity-0 px-3 sm:px-10 md:px-60 lg:px-87 pb-8 lg:pb-43">
           <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 max-w-42 lg:max-w-3xl">
             <!-- Recoleta -->
-            <div class="relative bg-cyan-900/70 backdrop-blur-sm rounded-full p-6 aspect-square flex flex-col items-center justify-center border-2 border-cyan-500/30 hover:border-yellow-200 transition-all duration-300 overflow-hidden">
+            <div class="relative bg-cyan-900/70 backdrop-blur-sm rounded-full p-6 aspect-square flex flex-col items-center justify-center border-2 border-cyan-500/30 overflow-hidden">
               <img :src="MapaRecoleta" alt="Mapa Recoleta" class="absolute w-full h-full object-cover opacity-30" />
               <div class="relative z-10 flex flex-col items-center">
                 <LocationIcon />
@@ -139,7 +139,7 @@ onMounted(() => {
             </div>
 
             <!-- City Bell -->
-            <div class="relative bg-cyan-900/70 backdrop-blur-sm rounded-full p-6 aspect-square flex flex-col items-center justify-center border-2 border-cyan-500/30 hover:border-yellow-200 transition-all duration-300 overflow-hidden">
+            <div class="relative bg-cyan-900/70 backdrop-blur-sm rounded-full p-6 aspect-square flex flex-col items-center justify-center border-2 border-cyan-500/30 overflow-hidden">
               <img :src="MapaCityBell" alt="Mapa City Bell" class="absolute w-full h-full object-cover opacity-30" />
               <div class="relative z-10 flex flex-col items-center">
                 <LocationIcon />
