@@ -30,16 +30,16 @@ const simpleLayout = true
             <div class="relative grid grid-cols-1 md:grid-cols-2  text-white text-md md:text-lg md:leading-8">
 
               <!-- Columna izquierda -->
-              <div class="space-y-2 md:px-11">
+              <div class="space-y-2 md:px-23">
                 <!-- Showroom Recoleta -->
-                <div class="flex gap-3 mb-4">
-                  <h3 class="text-xl sm:text-2xl font-semibold">Showroom Recoleta</h3>
+                <div class="flex gap-3 mb-4 mt-4">
+                  <h3 class="text-sm sm:text-2xl font-semibold">Showroom Recoleta</h3>
                 </div>
                 <p class="text-cyan-200"> - Av. Santa Fe 3253</p>
                 <p class="text-cyan-200 mb-10 sm:mb-6"> - Lunes a viernes, 10 hs a 18 hs</p>
                 <!-- Showroom City Bell -->
                 <div class="flex items-center gap-3 mb-4">
-                  <h3 class="text-xl sm:text-2xl font-semibold">Showroom City Bell</h3>
+                  <h3 class="text-sm sm:text-2xl font-semibold">Showroom City Bell</h3>
                 </div>
                 <p class="text-cyan-200"> - Cantilo 265</p>
                 <p class="text-cyan-200 mb-10 sm:mb-1"> - Lunes a sábados, 10 hs a 19 hs</p>
@@ -47,9 +47,9 @@ const simpleLayout = true
               </div>
 
               <!-- Columna derecha -->
-              <div class="space-y-4 md:ps-11 md:leading-11">
+              <div class="space-y-4 md:ps-30 md:leading-11 mt-4">
                 <div class="flex items-center gap-3 mb-4 sm:mb-6">
-                  <h3 class="text-xl sm:text-2xl font-semibold">Contacto directo</h3>
+                  <h3 class="text-sm sm:text-2xl font-semibold">Contacto directo</h3>
                 </div>
                 <p class="text-cyan-200 text-sm sm:text-xl">WhatsApp: <a href="https://wa.me/5491123456789" target="_blank" class="">+54 9 11 2345 6789</a></p>
                 <p class="text-cyan-200 text-sm sm:text-xl">Email: <a href="mailto:contacto@kangaru.store" class="text-yellow-100">contacto@kangaru.store</a></p>
@@ -62,7 +62,7 @@ const simpleLayout = true
           </div>
 
           <!-- Botón para volver al inicio -->
-          <div class="text-center md:mt-20">
+          <div class="text-center mb-3 md:mt-20">
             <router-link
               to="/"
               class="inline-block text-sm px-4 py-2 bg-cyan-800 hover:bg-cyan-700 text-white font-bold rounded-lg transition-colors duration-300"
