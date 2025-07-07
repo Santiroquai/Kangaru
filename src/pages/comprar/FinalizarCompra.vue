@@ -84,7 +84,7 @@ function enviarFormulario(e) {
                 <label for="telefono" class="block text-sm font-medium mb-1">Teléfono</label>
                 <input type="tel" id="telefono" required class="w-full bg-black/10 border rounded-lg px-4 py-2 lg:py-3" />
               </div>
-
+ 
               <div>
                 <label for="direccion" class="block text-sm font-medium mb-2">Dirección (opcional)</label>
                 <input id="direccion" class="w-full bg-black/10 border rounded-lg px-4 py-2 lg:py-3" />
