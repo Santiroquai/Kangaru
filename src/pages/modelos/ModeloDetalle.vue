@@ -2,7 +2,7 @@
 import { useRoute, useRouter } from 'vue-router'
 import { computed } from 'vue'
 import { modelos } from '@/data/modelos'
-import { ArrowLeft, Cart, Battery, Shield, Ram } from '@/components/ui/icons'
+import { ArrowLeft, Cart, Battery, Shield, Ram, Screen, Storage } from '@/components/ui/icons'
 
 const route = useRoute()
 const router = useRouter()
